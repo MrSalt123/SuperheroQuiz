@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Flash Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">What is The Flash's real name?</label>
+            <select id="question1" name="question1">
+                <option value="blank">--</option>
+                <option value="wallywest">Wally West</option>
+                <option value="jaygarrick">Jay Garrick</option>
+                <option value="correct">Barry Allen</option>
+                <option value="billybatson">Billy Batson</option>
+            </select><br><br>
+
+            <label for="question2">Which city does The Flash primarily protect as its superhero?</label>
+            <select id="question2" name="question2">
+                <option value="blank">--</option>
+                <option value="gotham">Gotham City</option>
+                <option value="correct">Central City</option>
+                <option value="metropolis">Metropolis</option>
+                <option value="starling">Starling City</option>
+            </select><br><br>
+
+            <label for="question3">What is the source of The Flash's super speed abilities?</label>
+            <select id="question3" name="question3">
+                <option value="blank">--</option>
+                <option value="correct">Speed Force</option>
+                <option value="radiation">Radiation Exposure</option>
+                <option value="superformula">Super Speed Serum</option>
+                <option value="alienartifact">Alien Artifact</option>
+            </select><br><br>
+
+            <label for="question4">Who is The Flash's arch-nemesis, known for being a speedster as well?</label>
+            <select id="question4" name="question4">
+                <option value="blank">--</option>
+                <option value="captaincold">Captain Cold</option>
+                <option value="zoom">Zoom</option>
+                <option value="thethinker">The Thinker</option>
+                <option value="correct">Reverse Flash</option>
+            </select><br><br>
+
+            <label for="question5">Which superhero team is The Flash a core member of in the DC Universe?</label>
+            <select id="question5" name="question5">
+                <option value="blank">--</option>
+                <option value="teenTitans">Teen Titans</option>
+                <option value="xmen">X-Men</option>
+                <option value="correct">Justice League</option>
+                <option value="avengers">Avengers</option>
+            </select><br><br>
+
+            <label for="question6">What is the name of The Flash's alter ego when he is a member of the Justice
+                League?</label>
+            <select id="question6" name="question6">
+                <option value="blank">--</option>
+                <option value="correct">The Scarlet Speedster</option>
+                <option value="quickarrow">Quick Arrow</option>
+                <option value="speedy">Speedy</option>
+                <option value="flashwing">Flashwing</option>
+            </select><br><br>
+
+            <label for="question7">Which element is The Flash particularly vulnerable to due to his connection to the
+                Speed Force?</label>
+            <select id="question7" name="question7">
+                <option value="blank">--</option>
+                <option value="kryptonite">Kryptonite</option>
+                <option value="darkmatter">Dark Matter</option>
+                <option value="antimatter">Antimatter</option>
+                <option value="correct">Tachyons</option>
+            </select><br><br>
+
+            <label for="question8">What is the name of The Flash's iconic red suit designed for high-speed
+                travel?</label>
+            <select id="question8" name="question8">
+                <option value="blank">--</option>
+                <option value="correct">Speed Suit</option>
+                <option value="fastarmor">Fast Armor</option>
+                <option value="flashgear">Flash Gear</option>
+                <option value="quickthreads">Quick Threads</option>
+            </select><br><br>
+
+            <label for="question9">Who trained The Flash to master his speed abilities and become a superhero?</label>
+            <select id="question9" name="question9">
+                <option value="blank">--</option>
+                <option value="batman">Batman</option>
+                <option value="correct">Jay Garrick</option>
+                <option value="greenarrow">Green Arrow</option>
+                <option value="wonderwoman">Wonder Woman</option>
+            </select><br><br>
+
+            <label for="question10">What is the name of the cosmic force that grants The Flash his super speed?</label>
+            <select id="question10" name="question10">
+                <option value="blank">--</option>
+                <option value="correct">Speed Force</option>
+                <option value="quantumenergy">Quantum Energy</option>
+                <option value="timewarp">Time Warp</option>
+                <option value="hyperspace">Hyperspace</option>
+            </select><br><br>
+
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var correctAnswers = 0;
+
+            if (document.getElementById('question1').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question2').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question3').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question4').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question5').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question6').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question7').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question8').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question9').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question10').value === 'correct') {
+                correctAnswers++;
+            }
+
+            alert('You got ' + correctAnswers + ' out of 10 questions correct!');
+        });
+    </script>
+</body>
+
+</html>

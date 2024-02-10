@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Wonder Woman Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">What is Wonder Woman's real name?</label>
+            <select id="question1" name="question1">
+                <option value="blank">--</option>
+                <option value="donnatroy">Donna Troy</option>
+                <option value="dianaprince">Diana Prince</option>
+                <option value="cassandrakane">Cassandra Kane</option>
+                <option value="nubia">Nubia</option>
+            </select><br><br>
+
+            <label for="question2">What is the name of Wonder Woman's magical, indestructible weapon?</label>
+            <select id="question2" name="question2">
+                <option value="blank">--</option>
+                <option value="invisiblejet">Invisible Jet</option>
+                <option value="tiaraofjustice">Tiara of Justice</option>
+                <option value="lassooftruth">Lasso of Truth</option>
+                <option value="braceletsofsubmission">Bracelets of Submission</option>
+            </select><br><br>
+
+            <label for="question3">Which mythical island is Wonder Woman's homeland?</label>
+            <select id="question3" name="question3">
+                <option value="blank">--</option>
+                <option value="themyscira">Themyscira</option>
+                <option value="atlantis">Atlantis</option>
+                <option value="olympus">Olympus</option>
+                <option value="valhalla">Valhalla</option>
+            </select><br><br>
+
+            <label for="question4">What is the name of Wonder Woman's mother, the Queen of the Amazons?</label>
+            <select id="question4" name="question4">
+                <option value="blank">--</option>
+                <option value="antiope">Antiope</option>
+                <option value="penelope">Penelope</option>
+                <option value="hippolyta">Hippolyta</option>
+                <option value="diana">Diana</option>
+            </select><br><br>
+
+            <label for="question5">Which god grants Wonder Woman her superhuman abilities in the comics?</label>
+            <select id="question5" name="question5">
+                <option value="blank">--</option>
+                <option value="ares">Ares</option>
+                <option value="athena">Athena</option>
+                <option value="zeus">Zeus</option>
+                <option value="hermes">Hermes</option>
+            </select><br><br>
+
+            <label for="question6">What is the name of Wonder Woman's alter ego when she is not in superhero
+                mode?</label>
+            <select id="question6" name="question6">
+                <option value="blank">--</option>
+                <option value="dianaprince">Diana Prince</option>
+                <option value="dianawarrior">Diana Warrior</option>
+                <option value="wondergirl">Wonder Girl</option>
+                <option value="amazonianqueen">Amazonian Queen</option>
+            </select><br><br>
+
+            <label for="question7">Which superhero team is Wonder Woman often associated with in the DC
+                Universe?</label>
+            <select id="question7" name="question7">
+                <option value="blank">--</option>               
+                <option value="avengers">Avengers</option>
+                <option value="xmen">X-Men</option>
+                <option value="titans">Titans</option>
+                <option value="justiceleague">Justice League</option>
+            </select>
+
+            <label for="question8">What is the material of Wonder Woman's indestructible bracelets?</label>
+            <select id="question8" name="question8">
+                <option value="blank">--</option>              
+                <option value="adamantium">Adamantium</option>
+                <option value="vibranium">Vibranium</option>
+                <option value="amazonium">Amazonium</option>
+                <option value="nthmetal">Nth Metal</option>
+            </select><br><br>
+
+            <label for="question9">Who is Wonder Woman's arch-nemesis, a powerful sorceress and Amazonian rival?</label>
+            <select id="question9" name="question9">
+                <option value="blank">--</option>
+                <option value="circe">Circe</option>
+                <option value="cheetah">Cheetah</option>
+                <option value="medusa">Medusa</option>
+                <option value="lilith">Lilith</option>
+            </select><br><br>
+
+            <label for="question10">Which Greek god is Wonder Woman's half-brother in some comic storylines?</label>
+            <select id="question10" name="question10">
+                <option value="blank">--</option>   
+                <option value="apollo">Apollo</option>
+                <option value="ares">Ares</option>
+                <option value="hermes">Hermes</option>
+                <option value="poseidon">Poseidon</option>
+            </select><br><br>
+
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var correctAnswers = 0;
+
+            if (document.getElementById('question1').value === 'dianaprince') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question2').value === 'lassooftruth') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question3').value === 'themyscira') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question4').value === 'hippolyta') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question5').value === 'zeus') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question6').value === 'dianaprince') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question7').value === 'justiceleague') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question8').value === 'amazonium') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question9').value === 'circe') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question10').value === 'ares') {
+                correctAnswers++;
+            }
+
+            alert('You got ' + correctAnswers + ' out of 10 questions correct!');
+        });
+    </script>
+</body>
+
+</html>

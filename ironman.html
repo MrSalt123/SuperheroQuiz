@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Iron Man Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">What is Iron Man's real name?</label>
+            <select id="question1" name="question1">
+                <option value="blank">--</option>
+                <option value="brucebanner">Bruce Banner</option>
+                <option value="peterparker">Peter Parker</option>
+                <option value="tonystark">Tony Stark</option>
+                <option value="steveRogers">Steve Rogers</option>
+            </select><br><br>
+
+            <label for="question2">What is the name of the powerful technology that powers Iron Man's suits?</label>
+            <select id="question2" name="question2">
+                <option value="blank">--</option>
+                <option value="quantumgenerator">Quantum Generator</option>
+                <option value="fusioncore">Fusion Core</option>
+                <option value="plasmaengine">Plasma Engine</option>
+                <option value="arcreactor">Arc Reactor</option>
+            </select><br><br>
+
+            <label for="question3">Which company does Tony Stark own and lead in the Marvel Universe?</label>
+            <select id="question3" name="question3">
+                <option value="blank">--</option>
+                <option value="wayneenterprises">Wayne Enterprises</option>
+                <option value="oscorp">Oscorp</option>
+                <option value="starkindustries">Stark Industries</option>
+                <option value="lexcorp">LexCorp</option>
+            </select><br><br>
+
+            <label for="question4">What is the name of Tony Stark's AI assistant in the Iron Man suits?</label>
+            <select id="question4" name="question4">
+                <option value="blank">--</option>
+                <option value="jarvis">J.A.R.V.I.S.</option>
+                <option value="friday">FRIDAY</option>
+                <option value="ultron">Ultron</option>
+                <option value="skynet">Skynet</option>
+            </select><br><br>
+
+            <label for="question5">Who is Iron Man's close friend and military liaison with a War Machine suit?</label>
+            <select id="question5" name="question5">
+                <option value="blank">--</option>
+                <option value="happyhogan">Happy Hogan</option>
+                <option value="pepperpotts">Pepper Potts</option>
+                <option value="jamesrhodes">James "Rhodey" Rhodes</option>
+                <option value="nickfury">Nick Fury</option>
+            </select><br><br>
+
+            <label for="question6">In which fictional city is Tony Stark's primary residence located?</label>
+            <select id="question6" name="question6">
+                <option value="blank">--</option>
+                <option value="gotham">Gotham City</option>
+                <option value="metropolis">Metropolis</option>
+                <option value="asgard">Asgard</option>
+                <option value="malibu">Malibu</option>
+            </select><br><br>
+
+            <label for="question7">What is the name of the first Iron Man suit that Tony Stark builds in a cave?</label>
+            <select id="question7" name="question7">
+                <option value="blank">--</option>
+                <option value="prototypeX">Prototype X</option>
+                <option value="ironclad">Ironclad</option>
+                <option value="markI">Mark I</option>
+                <option value="stealthwing">Stealth Wing</option>
+            </select><br><br>
+
+            <label for="question8">Which comic book storyline features Tony Stark's struggle with alcoholism?</label>
+            <select id="question8" name="question8">
+                <option value="blank">--</option>
+                <option value="demoninabottle">Demon in a Bottle</option>
+                <option value="armorwars">Armor Wars</option>
+                <option value="extremis">Extremis</option>
+                <option value="secretwars">Secret Wars</option>
+            </select><br><br>
+
+            <label for="question9">What is the name of the organization founded by Tony Stark focusing on advanced
+                technology solutions?</label>
+            <select id="question9" name="question9">
+                <option value="blank">--</option>
+                <option value="futuretech">FutureTech Innovations</option>
+                <option value="starkresilient">Stark Resilient</option>
+                <option value="technovations">Technovations Unlimited</option>
+                <option value="starkenterprises">Stark Enterprises</option>
+            </select><br><br>
+
+            <label for="question10">Which actor portrays Tony Stark/Iron Man in the Marvel Cinematic Universe?</label>
+            <select id="question10" name="question10">
+                <option value="blank">--</option>
+                <option value="chrisevans">Chris Evans</option>
+                <option value="chrisHemsworth">Chris Hemsworth</option>
+                <option value="robertdowneyjr">Robert Downey Jr.</option>
+                <option value="scarlettjohansson">Scarlett Johansson</option>
+            </select><br><br>
+
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var correctAnswers = 0;
+
+            if (document.getElementById('question1').value === 'tonystark') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question2').value === 'arcreactor') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question3').value === 'starkindustries') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question4').value === 'jarvis') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question5').value === 'jamesrhodes') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question6').value === 'malibu') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question7').value === 'markI') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question8').value === 'demoninabottle') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question9').value === 'starkresilient') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question10').value === 'robertdowneyjr') {
+                correctAnswers++;
+            }
+
+            alert('You got ' + correctAnswers + ' out of 10 questions correct!');
+        });
+    </script>
+</body>
+
+</html>

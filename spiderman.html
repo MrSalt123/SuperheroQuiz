@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Spiderman Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">What is Spider-Man's real name?</label>
+            <select id="question1" name="question1">
+                <option value="blank">--</option>
+                <option value="peterparker">Peter Parker</option>
+                <option value="milesmorales">Miles Morales</option>
+                <option value="harryosborn">Harry Osborn</option>
+                <option value="eddiebrock">Eddie Brock</option>
+            </select><br><br>
+
+            <label for="question2">What newspaper does Peter Parker work for as a photographer?</label>
+            <select id="question2" name="question2">
+                <option value="blank">--</option>
+                <option value="dailyplanet">Daily Planet</option>
+                <option value="metropolistribune">Metropolis Tribune</option>
+                <option value="dailybugle">Daily Bugle</option>
+                <option value="gothamgazette">Gotham Gazette</option>
+            </select><br><br>
+
+            <label for="question3">What is the name of Spider-Man's uncle who plays a significant role in his
+                origin?</label>
+            <select id="question3" name="question3">
+                <option value="blank">--</option>
+                <option value="unclemay">Uncle May</option>
+                <option value="unclejohn">Uncle John</option>
+                <option value="uncleben">Uncle Ben</option>
+                <option value="unclejim">Uncle Jim</option>
+            </select><br><br>
+
+            <label for="question4">What is the alias of the burglar who indirectly causes Uncle Ben's death?</label>
+            <select id="question4" name="question4">
+                <option value="blank">--</option>
+                <option value="thelizard">The Lizard</option>
+                <option value="sandman">Sandman</option>
+                <option value="thegreenGoblin">The Green Goblin</option>
+                <option value="thief">The Burglar</option>
+            </select><br><br>
+
+            <label for="question5">Who is Spider-Man's first love interest and later becomes his wife?</label>
+            <select id="question5" name="question5">
+                <option value="blank">--</option>
+                <option value="maryjane">Mary Jane Watson</option>
+                <option value="gwenstacy">Gwen Stacy</option>
+                <option value="blackcat">Black Cat</option>
+                <option value="feliciahardy">Felicia Hardy</option>
+            </select><br><br>
+
+            <label for="question6">What is the name of the symbiotic alien that bonds with Spider-Man, creating
+                Venom?</label>
+            <select id="question6" name="question6">
+                <option value="blank">--</option>
+                <option value="carnage">Carnage</option>
+                <option value="venom">Venom</option>
+                <option value="toxin">Toxin</option>
+                <option value="symbiote">Symbiote</option>
+            </select><br><br>
+
+            <label for="question7">Which villain is responsible for the creation of the infamous Sinister Six?</label>
+            <select id="question7" name="question7">
+                <option value="blank">--</option>
+                <option value="greenGoblin">Green Goblin</option>
+                <option value="sandman">Sandman</option>
+                <option value="doctoroctopus">Doctor Octopus</option>
+                <option value="kraven">Kraven the Hunter</option>
+            </select><br><br>
+
+            <label for="question8">What is the name of Spider-Man's AI-equipped suit designed by Tony Stark?</label>
+            <select id="question8" name="question8">
+                <option value="blank">--</option>
+                <option value="ironspider">Iron Spider</option>
+                <option value="webwarrior">Web Warrior</option>
+                <option value="arachnoblast">Arachno Blast</option>
+                <option value="starkspidey">Stark Spidey</option>
+            </select><br><br>
+
+            <label for="question9">Which high-tech company does Peter Parker work for in some comic storylines?</label>
+            <select id="question9" name="question9">
+                <option value="blank">--</option>
+                <option value="parkerindustries">Parker Industries</option>
+                <option value="starkindustries">Stark Industries</option>
+                <option value="waynetech">WayneTech</option>
+                <option value="oscorp">OsCorp</option>
+            </select><br><br>
+
+            <label for="question10">Who is the superhero mentor and father figure to Spider-Man in some story
+                arcs?</label>
+            <select id="question10" name="question10">
+                <option value="blank">--</option>
+                <option value="captainamerica">Captain America</option>
+                <option value="tonystark">Tony Stark</option>
+                <option value="unclesam">Uncle Sam</option>
+                <option value="nickfury">Nick Fury</option>
+            </select><br><br>
+
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var correctAnswers = 0;
+
+            if (document.getElementById('question1').value === 'peterparker') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question2').value === 'dailybugle') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question3').value === 'uncleben') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question4').value === 'thief') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question5').value === 'maryjane') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question6').value === 'venom') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question7').value === 'doctoroctopus') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question8').value === 'ironspider') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question9').value === 'oscorp') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question10').value === 'tonystark') {
+                correctAnswers++;
+            }
+
+            alert('You got ' + correctAnswers + ' out of 10 questions correct!');
+        });
+    </script>
+</body>
+
+</html>

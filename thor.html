@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Thor Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">What is Thor's full name in the Marvel comics?</label>
+            <select id="question1" name="question1">
+                <option value="blank">--</option>
+                <option value="thorfriggason">Thor Friggason</option>
+                <option value="thorlokiison">Thor Lokiison</option>
+                <option value="thorsifson">Thor Sifson</option>
+                <option value="thorodinson">Thor Odinson</option>
+            </select><br><br>
+
+            <label for="question2">What is the name of Thor's enchanted hammer?</label>
+            <select id="question2" name="question2">
+                <option value="blank">--</option>
+                <option value="mjolnir">Mjolnir</option>
+                <option value="gungnir">Gungnir</option>
+                <option value="stormbreaker">Stormbreaker</option>
+                <option value="excalibur">Excalibur</option>
+            </select><br><br>
+
+            <label for="question3">In Norse mythology, who is Thor's father?</label>
+            <select id="question3" name="question3">
+                <option value="blank">--</option>
+                <option value="loki">Loki</option>
+                <option value="freyr">Freyr</option>
+                <option value="odin">Odin</option>
+                <option value="balder">Balder</option>
+            </select><br><br>
+
+            <label for="question4">Which realm is Thor the prince and later king of?</label>
+            <select id="question4" name="question4">
+                <option value="blank">--</option>
+                <option value="midgard">Midgard</option>
+                <option value="jotunheim">Jotunheim</option>
+                <option value="alfheim">Alfheim</option>
+                <option value="asgard">Asgard</option>
+            </select><br><br>
+
+            <label for="question5">Who is Thor's adoptive brother, the God of Mischief?</label>
+            <select id="question5" name="question5">
+                <option value="blank">--</option>
+                <option value="thanos">Thanos</option>
+                <option value="hela">Hela</option>
+                <option value="loki">Loki</option>
+                <option value="balder">Balder</option>
+            </select><br><br>
+
+            <label for="question6">What is the name of Thor's mother in Norse mythology?</label>
+            <select id="question6" name="question6">
+                <option value="blank">--</option>
+                <option value="frigga">Frigga</option>
+                <option value="hel">Hel</option>
+                <option value="sif">Sif</option>
+                <option value="idunn">Idunn</option>
+            </select><br><br>
+
+            <label for="question7">What group of warriors does Thor lead in Asgard?</label>
+            <select id="question7" name="question7">
+                <option value="blank">--</option>
+                <option value="ravensquad">The Raven Squad</option>
+                <option value="warriorsthree">The Warriors Three</option>
+                <option value="thunderstrike">The Thunderstrike</option>
+                <option value="stormguard">The Storm Guard</option>
+            </select><br><br>
+
+            <label for="question8">What is the name of the enchanted realm that Thor often visits in Norse
+                mythology?</label>
+            <select id="question8" name="question8">
+                <option value="blank">--</option>
+                <option value="svartalfheim">Svartalfheim</option>
+                <option value="alvheim">Alvheim</option>
+                <option value="niflheim">Niflheim</option>
+                <option value="valhalla">Valhalla</option>
+            </select><br><br>
+
+            <label for="question9">What is Thor's iconic battle cry often associated with the sound of thunder?</label>
+            <select id="question9" name="question9">
+                <option value="blank">--</option>
+                <option value="bythehammerofthor">By the hammer of Thor!</option>
+                <option value="forasgard">For Asgard!</option>
+                <option value="thunderstrike">Thunderstrike!</option>
+                <option value="lightningandthunder">Lightning and thunder!</option>
+            </select><br><br>
+
+            <label for="question10">What is the name of Thor's love interest and Asgardian warrior?</label>
+            <select id="question10" name="question10">
+                <option value="blank">--</option>
+                <option value="sif">Sif</option>
+                <option value="jane">Jane Foster</option>
+                <option value="valkyrie">Valkyrie</option>
+                <option value="hela">Hela</option>
+            </select><br><br>
+
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var correctAnswers = 0;
+
+            if (document.getElementById('question1').value === 'thorodinson') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question2').value === 'mjolnir') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question3').value === 'odin') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question4').value === 'asgard') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question5').value === 'loki') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question6').value === 'frigga') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question7').value === 'warriorsthree') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question8').value === 'alvheim') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question9').value === 'forasgard') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question10').value === 'jane') {
+                correctAnswers++;
+            }
+
+            alert('You got ' + correctAnswers + ' out of 10 questions correct!');
+        });
+    </script>
+</body>
+
+</html>

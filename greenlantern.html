@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Green Lantern Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">What is the real name of the Green Lantern from Earth, known for his
+                willpower?</label>
+            <select id="question1" name="question1">
+                <option value="blank">--</option>
+                <option value="johnstewart">John Stewart</option>
+                <option value="kyleRayner">Kyle Rayner</option>
+                <option value="haljordan">Hal Jordan</option>
+                <option value="guygardner">Guy Gardner</option>
+            </select><br><br>
+
+            <label for="question2">Which intergalactic police force does the Green Lantern Corps belong to?</label>
+            <select id="question2" name="question2">
+                <option value="blank">--</option>
+                <option value="novaCorps">Nova Corps</option>
+                <option value="starforce">Starforce</option>
+                <option value="guardians">Guardians of the Universe</option>
+                <option value="ringbearers">Ringbearers Corps</option>
+            </select><br><br>
+
+            <label for="question3">What is the source of power for Green Lanterns, granting them their
+                abilities?</label>
+            <select id="question3" name="question3">
+                <option value="blank">--</option>
+                <option value="redcrystals">Red Power Crystals</option>
+                <option value="yellowrings">Yellow Power Rings</option>
+                <option value="greenenergy">Green Energy</option>
+                <option value="cosmicforce">Cosmic Force</option>
+            </select><br><br>
+
+            <label for="question4">Which emotion is associated with the Green Lantern's power ring?</label>
+            <select id="question4" name="question4">
+                <option value="blank">--</option>
+                <option value="fear">Fear</option>
+                <option value="willpower">Willpower</option>
+                <option value="love">Love</option>
+                <option value="hope">Hope</option>
+            </select><br><br>
+
+            <label for="question5">Who is the villainous entity and embodiment of fear that opposes the Green Lantern
+                Corps?</label>
+            <select id="question5" name="question5">
+                <option value="blank">--</option>
+                <option value="sinestro">Sinestro</option>
+                <option value="atrocitus">Atrocitus</option>
+                <option value="parallax">Parallax</option>
+                <option value="larfleeze">Larfleeze</option>
+            </select><br><br>
+
+            <label for="question6">What is the oath recited by Green Lanterns when they charge their power ring?</label>
+            <select id="question6" name="question6">
+                <option value="blank">--</option>
+                <option value="greenlanternoath">In brightest day, in blackest night, No evil shall escape my sight. Let
+                    those who worship evil's might, Beware my power, Green Lantern's light!</option>
+                <option value="starCorps">By the stars, be ever bright. In the cosmos, spread our light. Justice guides
+                    our fearless flight. Green Lantern's might!</option>
+                <option value="willpowerOath">With willpower strong and true, I wield my ring, the greenest hue. Against
+                    all evil, I will strew. In brightest day or darkest dew.</option>
+                <option value="cosmicPledge">To the cosmos, we're aligned. With our rings, justice we find. In our
+                    Corps, our strength combined. Green Lanterns, forever bind!</option>
+            </select><br><br>
+
+            <label for="question7">What is the name of Green Lantern's home planet, where he was an Air Force pilot
+                before becoming a superhero?</label>
+            <select id="question7" name="question7">
+                <option value="blank">--</option>
+                <option value="oa">Oa</option>
+                <option value="thanagar">Thanagar</option>
+                <option value="krypton">Krypton</option>
+                <option value="earth">Earth</option>
+            </select><br><br>
+
+            <label for="question8">Which color represents the emotional spectrum that opposes the Green Lantern's green
+                light?</label>
+            <select id="question8" name="question8">
+                <option value="blank">--</option>
+                <option value="yellow">Yellow</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="indigo">Indigo</option>
+            </select><br><br>
+
+            <label for="question9">Who is the ancient and wise leader of the Green Lantern Corps?</label>
+            <select id="question9" name="question9">
+                <option value="blank">--</option>
+                <option value="salaak">Salaak</option>
+                <option value="kilowog">Kilowog</option>
+                <option value="ganthet">Ganthet</option>
+                <option value="tomarre">Tomar-Re</option>
+            </select><br><br>
+
+            <label for="question10">What is the name of Green Lantern's superhero mentor who served as a Green Lantern
+                in the Golden Age?</label>
+            <select id="question10" name="question10">
+                <option value="blank">--</option>
+                <option value="jaygarrick">Jay Garrick</option>
+                <option value="tedkord">Ted Kord</option>
+                <option value="alanScott">Alan Scott</option>
+                <option value="rextyler">Rex Tyler</option>
+            </select><br><br>
+
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var correctAnswers = 0;
+
+            if (document.getElementById('question1').value === 'haljordan') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question2').value === 'guardians') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question3').value === 'greenenergy') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question4').value === 'willpower') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question5').value === 'parallax') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question6').value === 'greenlanternoath') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question7').value === 'earth') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question8').value === 'yellow') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question9').value === 'kilowog') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question10').value === 'alanScott') {
+                correctAnswers++;
+            }
+
+            alert('You got ' + correctAnswers + ' out of 10 questions correct!');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Black Widow Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">What is Black Widow's real name?</label>
+            <select id="question1" name="question1">
+                <option value="blank">--</option>
+                <option value="wandasmaximoff">Wanda Maximoff</option>
+                <option value="caroldanvers">Carol Danvers</option>
+                <option value="peggycarter">Peggy Carter</option>
+                <option value="correct">Natasha Romanoff</option>
+            </select><br><br>
+
+            <label for="question2">In which organization did Black Widow receive her training?</label>
+            <select id="question2" name="question2">
+                <option value="blank">--</option>
+                <option value="kgb">KGB</option>
+                <option value="correct">S.H.I.E.L.D.</option>
+                <option value="hydra">Hydra</option>
+                <option value="mi6">MI6</option>
+            </select><br><br>
+
+            <label for="question3">What is the signature weapon used by Black Widow?</label>
+            <select id="question3" name="question3">
+                <option value="blank">--</option>
+                <option value="batons">Batons</option>
+                <option value="boomerangs">Boomerangs</option>
+                <option value="correct">Widow's Bites</option>
+                <option value="bowandarrow">Bow and Arrow</option>
+            </select><br><br>
+
+            <label for="question4">Who is Black Widow's fellow Avenger and close friend?</label>
+            <select id="question4" name="question4">
+                <option value="blank">--</option>
+                <option value="ironman">Iron Man</option>
+                <option value="thor">Thor</option>
+                <option value="correct">Hawkeye</option>
+                <option value="captainamerica">Captain America</option>
+            </select><br><br>
+
+            <label for="question5">Which actor portrays Black Widow in the Marvel Cinematic Universe?</label>
+            <select id="question5" name="question5">
+                <option value="blank">--</option>
+                <option value="correct">Scarlett Johansson</option>
+                <option value="natalieportman">Natalie Portman</option>
+                <option value="brielarson">Brie Larson</option>
+                <option value="elizabetholsen">Elizabeth Olsen</option>
+            </select><br><br>
+
+            <label for="question6">What is the name of the covert operation depicted in Black Widow's solo film?</label>
+            <select id="question6" name="question6">
+                <option value="blank">--</option>
+                <option value="darkphoenix">Dark Phoenix</option>
+                <option value="winterguard">Winter Guard</option>
+                <option value="correct">Red Room</option>
+                <option value="blackops">Black Ops</option>
+            </select><br><br>
+
+            <label for="question7">What is Black Widow's first appearance in the Marvel Comics?</label>
+            <select id="question7" name="question7">
+                <option value="blank">--</option>
+                <option value="ironman1">Iron Man #1</option>
+                <option value="correct">Avengers #1</option>
+                <option value="amazingspiderman1">Amazing Spider-Man #1</option>
+                <option value="xmen1">X-Men #1</option>
+            </select><br><br>
+
+            <label for="question8">Which superhero team does Black Widow join as a founding member in the
+                comics?</label>
+            <select id="question8" name="question8">
+                <option value="blank">--</option>
+                <option value="xmen">X-Men</option>
+                <option value="justiceleague">Justice League</option>
+                <option value="correct">Avengers</option>
+                <option value="fantasticfour">Fantastic Four</option>
+            </select><br><br>
+
+            <label for="question9">What is the alias used by Black Widow when she operates as a spy?</label>
+            <select id="question9" name="question9">
+                <option value="blank">--</option>
+                <option value="scarletwitch">Scarlet Witch</option>
+                <option value="shadowdancer">Shadow Dancer</option>
+                <option value="correct">Black Widow</option>
+                <option value="ghostspy">Ghost Spy</option>
+            </select><br><br>
+
+            <label for="question10">In the MCU, what is the name of the organization that trained Black Widow and her
+                fellow assassins?</label>
+            <select id="question10" name="question10">
+                <option value="blank">--</option>
+                <option value="correct">Red Room</option>
+                <option value="hydra">Hydcorrectra</option>
+                <option value="aim">A.I.M.</option>
+                <option value="thetenrings">The Ten Rings</option>
+            </select><br><br>
+
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var correctAnswers = 0;
+
+            if (document.getElementById('question1').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question2').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question3').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question4').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question5').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question6').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question7').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question8').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question9').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question10').value === 'correct') {
+                correctAnswers++;
+            }
+
+            alert('You got ' + correctAnswers + ' out of 10 questions correct!');
+        });
+    </script>
+</body>
+
+</html>

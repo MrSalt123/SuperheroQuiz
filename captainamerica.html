@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Captain America Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">What is Captain America's real name?</label>
+            <select id="question1" name="question1">
+                <option value="blank">--</option>
+                <option value="correct">Steve Rogers</option>
+                <option value="tonystark">Tony Stark</option>
+                <option value="brucebanner">Bruce Banner</option>
+                <option value="clintbarton">Clint Barton</option>
+            </select><br><br>
+
+            <label for="question2">What is the name of the super-soldier serum that transformed Captain America?</label>
+            <select id="question2" name="question2">
+                <option value="blank">--</option>
+                <option value="infinityserum">Infinity Serum</option>
+                <option value="vitasray">Vita-Ray</option>
+                <option value="correct">Super Soldier Formula</option>
+                <option value="gammaenhancer">Gamma Enhancer</option>
+            </select><br><br>
+
+            <label for="question3">What is Captain America's iconic shield made of?</label>
+            <select id="question3" name="question3">
+                <option value="blank">--</option>
+                <option value="adamantium">Adamantium</option>
+                <option value="correct">Vibranium</option>
+                <option value="promethium">Promethium</option>
+                <option value="uru">Uru</option>
+            </select><br><br>
+
+            <label for="question4">Which superhero team does Captain America lead in the comics?</label>
+            <select id="question4" name="question4">
+                <option value="blank">--</option>
+                <option value="xmen">X-Men</option>
+                <option value="justiceleague">Justice League</option>
+                <option value="fantasticfour">Fantastic Four</option>
+                <option value="correct">Avengers</option>
+            </select><br><br>
+
+            <label for="question5">Who is Captain America's best friend and fellow soldier during World War II?</label>
+            <select id="question5" name="question5">
+                <option value="blank">--</option>
+                <option value="samwilson">Sam Wilson</option>
+                <option value="jamesrhodes">James Rhodes</option>
+                <option value="correct">Bucky Barnes</option>
+                <option value="scottlang">Scott Lang</option>
+            </select><br><br>
+
+            <label for="question6">In which war did Captain America first appear in the comics?</label>
+            <select id="question6" name="question6">
+                <option value="blank">--</option>
+                <option value="correct">World War I</option>
+                <option value="worldwar2">World War II</option>
+                <option value="koreanwar">Korean War</option>
+                <option value="vietnamwar">Vietnam War</option>
+            </select><br><br>
+
+            <label for="question7">What is Captain America's iconic catchphrase?</label>
+            <select id="question7" name="question7">
+                <option value="blank">--</option>
+                <option value="hulksmash">Hulk Smash!</option>
+                <option value="correct">Avengers, Assemble!</option>
+                <option value="iamironman">I am Iron Man.</option>
+                <option value="itsclobberintime">It's Clobberin' Time!</option>
+            </select><br><br>
+
+            <label for="question8">What is the name of the organization that created Captain America in the
+                comics?</label>
+            <select id="question8" name="question8">
+                <option value="blank">--</option>
+                <option value="hydra">Hydra</option>
+                <option value="aim">A.I.M.</option>
+                <option value="weaponx">Weapon X</option>
+                <option value="correct">S.H.I.E.L.D.</option>
+            </select><br><br>
+
+            <label for="question9">Who portrays Captain America in the Marvel Cinematic Universe?</label>
+            <select id="question9" name="question9">
+                <option value="blank">--</option>
+                <option value="correct">Chris Evans</option>
+                <option value="chrishemsworth">Chris Hemsworth</option>
+                <option value="robertdowneyjr">Robert Downey Jr.</option>
+                <option value="markruffalo">Mark Ruffalo</option>
+            </select><br><br>
+
+            <label for="question10">What is the name of the superhero serum program that enhanced Captain America's
+                physical attributes?</label>
+            <select id="question10" name="question10">
+                <option value="blank">--</option>
+                <option value="operationenhance">Operation Enhance</option>
+                <option value="superwarrior">Super Warrior Program</option>
+                <option value="correct">Project Rebirth</option>
+                <option value="serumofpower">Serum of Power</option>
+            </select><br><br>
+
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var correctAnswers = 0;
+
+            if (document.getElementById('question1').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question2').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question3').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question4').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question5').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question6').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question7').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question8').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question9').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question10').value === 'correct') {
+                correctAnswers++;
+            }
+
+            alert('You got ' + correctAnswers + ' out of 10 questions correct!');
+        });
+    </script>
+</body>
+
+</html>

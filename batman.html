@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Batman Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">What is Batman's real name?</label>
+            <select id="question1" name="question1">
+                <option value="blank">--</option>
+                <option value="clarkkent">Clark Kent</option>
+                <option value="correct">Bruce Wayne</option>
+                <option value="peterparker">Peter Parker</option>
+                <option value="tonystark">Tony Stark</option>
+            </select><br><br>
+
+            <label for="question2">Who is Batman's loyal butler?</label>
+            <select id="question2" name="question2">
+                <option value="blank">--</option>
+                <option value="jameson">J. Jonah Jameson</option>
+                <option value="pepper">Pepper Potts</option>
+                <option value="uncleben">Uncle Ben</option>
+                <option value="correct">Alfred</option>
+            </select><br><br>
+
+            <label for="question3">In which city does Batman operate?</label>
+            <select id="question3" name="question3">
+                <option value="blank">--</option>
+                <option value="metropolis">Metropolis</option>
+                <option value="correct">Gotham City</option>
+                <option value="newyork">New York City</option>
+                <option value="starling">Starling City</option>
+            </select><br><br>
+
+            <label for="question4">What is Batman's primary mode of transportation?</label>
+            <select id="question4" name="question4">
+                <option value="blank">--</option>
+                <option value="correct">Batmobile</option>
+                <option value="batplane">Batplane</option>
+                <option value="batcycle">Batcycle</option>
+                <option value="batboat">Batboat</option>
+            </select><br><br>
+
+            <label for="question5">Who is Batman's arch-nemesis?</label>
+            <select id="question5" name="question5">
+                <option value="blank">--</option>
+                <option value="riddler">Riddler</option>
+                <option value="twoface">Two-Face</option>
+                <option value="penguin">Penguin</option>
+                <option value="correct">Joker</option>
+            </select><br><br>
+
+            <label for="question6">What is the name of Batman's sidekick, known for wearing a colorful costume?</label>
+            <select id="question6" name="question6">
+                <option value="blank">--</option>
+                <option value="nightwing">Nightwing</option>
+                <option value="redhood">Red Hood</option>
+                <option value="correct">Robin</option>
+                <option value="batgirl">Batgirl</option>
+            </select><br><br>
+
+            <label for="question7">Which organization does Batman co-found with other superheroes?</label>
+            <select id="question7" name="question7">
+                <option value="blank">--</option>
+                <option value="avengers">Avengers</option>
+                <option value="correct">Justice League</option>
+                <option value="xmen">X-Men</option>
+                <option value="teenTitans">Teen Titans</option>
+            </select><br><br>
+
+            <label for="question8">What is the name of Batman's gadget-filled utility belt?</label>
+            <select id="question8" name="question8">
+                <option value="blank">--</option>
+                <option value="batbelt">Bat Belt</option>
+                <option value="correct">Utility Belt</option>
+                <option value="techbelt">Tech Belt</option>
+                <option value="gadgetbelt">Gadget Belt</option>
+            </select><br><br>
+
+            <label for="question9">Who trained Batman in various martial arts disciplines?</label>
+            <select id="question9" name="question9">
+                <option value="blank">--</option>
+                <option value="correct">Shihan Matsuda</option>
+                <option value="shredder">Shredder</option>
+                <option value="masterchief">Master Chief</option>
+                <option value="splinter">Splinter</option>
+            </select><br><br>
+
+            <label for="question10">What is the name of Batman's secret hideout?</label>
+            <select id="question10" name="question10">
+                <option value="blank">--</option>
+                <option value="fortressofsolitude">Fortress of Solitude</option>
+                <option value="xavierinstitute">Xavier's Institute</option>
+                <option value="correct">Batcave</option>
+                <option value="starktower">Stark Tower</option>
+            </select><br><br>
+
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var correctAnswers = 0;
+
+            if (document.getElementById('question1').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question2').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question3').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question4').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question5').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question6').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question7').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question8').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question9').value === 'correct') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question10').value === 'correct') {
+                correctAnswers++;
+            }
+
+            alert('You got ' + correctAnswers + ' out of 10 questions correct!');
+        });
+    </script>
+</body>
+
+</html>

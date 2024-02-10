@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="quiz-container">
+        <h1>Superman Quiz</h1>
+        <form id="quiz-form">
+            <label for="question1">What is Superman's real name on his home planet Krypton?</label>
+            <select id="question1" name="question1">
+                <option value="blank">--</option>
+                <option value="kal-el">Kal-El</option>
+                <option value="jor-el">Jor-El</option>
+                <option value="zod-el">Zod-El</option>
+                <option value="kara-el">Kara-El</option>
+            </select><br><br>
+
+            <label for="question2">What substance is Superman vulnerable to that is commonly found on his home
+                planet?</label>
+            <select id="question2" name="question2">
+                <option value="blank">--</option>
+                <option value="adamantium">Adamantium</option>
+                <option value="kryptonite">Kryptonite</option>
+                <option value="vibranium">Vibranium</option>
+                <option value="unobtainium">Unobtainium</option>
+            </select><br><br>
+
+            <label for="question3">What is Superman's birth name in Smallville before adopting the superhero
+                persona?</label>
+            <select id="question3" name="question3">
+                <option value="blank">--</option>
+                <option value="brucewayne">Bruce Wayne</option>
+                <option value="peterparker">Peter Parker</option>
+                <option value="clarkkent">Clark Kent</option>
+                <option value="barryallen">Barry Allen</option>
+            </select><br><br>
+
+            <label for="question4">Who is Superman's love interest and fellow reporter at the Daily Planet?</label>
+            <select id="question4" name="question4">
+                <option value="blank">--</option>
+                <option value="selinakyle">Selina Kyle</option>
+                <option value="maryjane">Mary Jane Watson</option>
+                <option value="loislane">Lois Lane</option>
+                <option value="gwenstacy">Gwen Stacy</option>
+            </select><br><br>
+
+            <label for="question5">What is the name of Superman's Kryptonian father who guides him as a holographic
+                AI?</label>
+            <select id="question5" name="question5">
+                <option value="blank">--</option>
+                <option value="jonathankent">Jonathan Kent</option>
+                <option value="jorel">Jor-El</option>
+                <option value="zor-el">Zor-El</option>
+                <option value="martha">Martha</option>
+            </select><br><br>
+
+            <label for="question6">Which fictional city does Superman primarily protect as its superhero?</label>
+            <select id="question6" name="question6">
+                <option value="blank">--</option>
+                <option value="gotham">Gotham City</option>
+                <option value="metropolis">Metropolis</option>
+                <option value="centralcity">Central City</option>
+                <option value="starling">Starling City</option>
+            </select><br><br>
+
+            <label for="question7">What is the name of Superman's biological cousin who also possesses
+                superpowers?</label>
+            <select id="question7" name="question7">
+                <option value="blank">--</option>
+                <option value="wonderwoman">Wonder Woman</option>
+                <option value="blackcanary">Black Canary</option>
+                <option value="supergirl">Supergirl</option>
+                <option value="hawkgirl">Hawkgirl</option>
+            </select><br><br>
+
+            <label for="question8">Which superhero team is Superman a core member of in the DC Universe?</label>
+            <select id="question8" name="question8">
+                <option value="blank">--</option>
+                <option value="avengers">Avengers</option>
+                <option value="xmen">X-Men</option>
+                <option value="fantasticfour">Fantastic Four</option>
+                <option value="justiceleague">Justice League</option>
+            </select><br><br>
+
+            <label for="question9">What is the name of the newspaper where Clark Kent works as a reporter?</label>
+            <select id="question9" name="question9">
+                <option value="blank">--</option>
+                <option value="dailyplanet">Daily Planet</option>
+                <option value="dailybugle">Daily Bugle</option>
+                <option value="metropolistimes">Metropolis Times</option>
+                <option value="gothamgazette">Gotham Gazette</option>
+            </select><br><br>
+
+            <label for="question10">Who is Superman's arch-nemesis, a brilliant and wealthy criminal mastermind?</label>
+            <select id="question10" name="question10">
+                <option value="blank">--</option>
+                <option value="joker">Joker</option>
+                <option value="lexluthor">Lex Luthor</option>
+                <option value="thepenguin">The Penguin</option>
+                <option value="darkseid">Darkseid</option>
+            </select><br><br>
+
+
+            <button id="submitBtn">Submit</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById('submitBtn').addEventListener('click', function () {
+            var correctAnswers = 0;
+
+            if (document.getElementById('question1').value === 'kal-el') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question2').value === 'kryptonite') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question3').value === 'clarkkent') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question4').value === 'loislane') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question5').value === 'jorel') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question6').value === 'metropolis') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question7').value === 'supergirl') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question8').value === 'justiceleague') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question9').value === 'dailyplanet') {
+                correctAnswers++;
+            }
+
+            if (document.getElementById('question10').value === 'lexluthor') {
+                correctAnswers++;
+            }
+
+            alert('You got ' + correctAnswers + ' out of 10 questions correct!');
+        });
+    </script>
+</body>
+
+</html>
